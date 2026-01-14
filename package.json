@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/hoythan/postcss-tailwind-opacity-fallback"
   },
-    "homepage": "https://github.com/hoythan/postcss-tailwind-opacity-fallback",
+  "homepage": "https://github.com/hoythan/postcss-tailwind-opacity-fallback",
   "bugs": {
     "url": "https://github.com/hoythan/postcss-tailwind-opacity-fallback/issues"
   },
@@ -55,4 +55,3 @@
     "node": ">=18"
   }
 }
-
