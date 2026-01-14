@@ -1,0 +1,58 @@
+{
+  "name": "postcss-tailwind-opacity-fallback",
+  "version": "0.1.0",
+  "description": "PostCSS plugin to add Safari-safe rgba() fallbacks for Tailwind v4 */NN opacity utilities (bg/text/border/outline/fill/stroke).",
+  "license": "MIT",
+  "author": "hoythan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hoythan/postcss-tailwind-opacity-fallback"
+  },
+    "homepage": "https://github.com/hoythan/postcss-tailwind-opacity-fallback",
+  "bugs": {
+    "url": "https://github.com/hoythan/postcss-tailwind-opacity-fallback/issues"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "keywords": [
+    "postcss",
+    "tailwindcss",
+    "tailwind",
+    "safari",
+    "opacity",
+    "color-mix",
+    "fallback",
+    "css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "pnpm run clean && pnpm run build"
+  },
+  "peerDependencies": {
+    "postcss": "^8.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "postcss": "^8.5.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+
